@@ -40,7 +40,7 @@ if (isset($_GET['addform']))
   exit();
 }
 
-if (isset($_POST['action']) and $_POST['action'] == 'Edit')
+if ((isset($_POST['action'])) && ($_POST['action'] == 'Edit'))
 {
   include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
 
@@ -98,7 +98,7 @@ if (isset($_GET['editform']))
   exit();
 }
 
-if (isset($_POST['action']) and $_POST['action'] == 'Delete')
+if ((isset($_POST['action'])) && ($_POST['action'] == 'Delete'))
 {
   include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
 
